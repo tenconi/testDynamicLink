@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.navegador{
+    background: linear-gradient(15deg,lightblue,lightseagreen );
+    padding:10px;
+    display: flex;
+    list-style: none;
+}
+.linkNav{
+    color:#333;
+    margin-right: 15px;    
+    font-weight: 600;
+    text-decoration: none;
+}
+.linkNav:hover{
+    text-decoration: underline;
+}
+/*---*/
+.card{
+    border: 1px solid silver;
+    max-width: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25);
+    color:#454545;
+    height: 100%;
+    position: relative;
+}
+.card__img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card__img img{
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.card:first-child .card__img img{
+    top: 0;
+}
+.card__info{
+    padding: 15px 15px 40px;
+}
+.card h2{
+    font-size: 18px;
+}
+.card h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card p{
+    font-size: 12px;
+}
+.card__info hr{
+    margin: 10px 0;
+}
+.linked{
+    text-decoration: none;
+}
+.card__estado--legend{
+    color:silver;
+    font-size: 10px!important;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.card__estado{
+    position: absolute;
+    bottom:10px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* ----- */
+.container{
+    width: 80%;
+    margin: 40px auto;
+  }
+.c-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+}
+/* ----- */
+.back{
+    margin-top:5px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.alink{    
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: lightgreen;
+}
+.detailContainer{
+    display: flex;
+    height: 70vh;
+    justify-content: flex-start;
+}
+.detailContainer__img{
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailContainer__img img{
+    height: 100%;
+    position: absolute;
+}
+.detailContainer__info{
+    width: 60%;
+    padding-left: 20px;
+    text-align: left;
+}
+.detailContainer__info h3{
+    font-weight: 100;
+}
+.detailContainer__info h4{
+    margin: 20px 0 10px;
+    color:grey
+}
