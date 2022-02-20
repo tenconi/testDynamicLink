@@ -14,7 +14,10 @@ function Status() {
     .then((res)=>setStatus(res.data))
   },[estado.st])
 
+console.log('status: '+ estado)
 
+const comoTa = status.filter( x => estado.st = status.status)
+console.log('estado: '+ comoTa)  //no levanta filtro :(
   
   return (
     <>
@@ -23,7 +26,8 @@ function Status() {
     </div>
 
     <div className="container">
-      <p>status</p> {`${estado.st}`}    </div>
+        <p>status</p> {`${estado.st}`}    
+      </div>
     
     <div>
       {

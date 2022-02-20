@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const Card=({mando})=> {
   return (
     <div className='card'>
+      <div key={mando.char_id}>
         <div className='card__img'>
           <img src={mando.img} alt='pic' />
         </div>        
@@ -19,7 +20,7 @@ const Card=({mando})=> {
         <Link to={`/status/${mando.status}`} className="card__estado">
         <p className='card__estado--legend'>STATUS:</p> {mando.status}
         </Link>
-            
+        </div>
     </div>
   )
 }
